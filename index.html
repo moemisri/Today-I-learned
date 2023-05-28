@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny"
+      rel="stylesheet"
+    />
     <title>Today I Learned!</title>
   </head>
   <body>
-    <header>
-      <img src="logo.png" height="60px" width="60px" alt="today-i-leared" />
-      <h1>Today I Learned!</h1>
-      <button disabled="disabled">Share a fact</button>
+    <header class="header">
+      <div class="logo">
+        <img src="logo.png" height="60px" width="60px" alt="today-i-leared" />
+        <h1>Today I Learned!</h1>
+      </div>
+      <button>Share a fact</button>
     </header>
-    <form action="submit">
+    <form class="fact-form" action="submit">
       <input
         type="text"
         name=""
@@ -41,11 +50,11 @@
       </aside>
       <section>
         <ul>
-          <li>
+          <li class="fact">
             <p>
               React is being developed by Meta (formerly facebook)
               <a href="https://opensource.fb.com/" target="_blank">(Source)</a>
-              <span>#techology#</span>
+              <span class="fact-cat">#techology#</span>
             </p>
             <div class="">
               <button>👍 <b> 54</b></button>
@@ -53,7 +62,7 @@
               <button>⛔️ <b> 54</b></button>
             </div>
           </li>
-          <li>
+          <li class="fact">
             <p>
               Millennial dads spend 3 times as much time with their kids than
               their fathers spent with them. In 1982, 43% of fathers had never
@@ -63,7 +72,7 @@
                 target="_blank"
                 >(Source)</a
               >
-              <span>#society#</span>
+              <span class="fact-cat">#society#</span>
             </p>
             <div class="">
               <button>👍 <b> 54</b></button>
